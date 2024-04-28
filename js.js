@@ -25,6 +25,17 @@ function fetch_Pokemon(pokemonId) {
       });
   }
   
+    function mostrar_modal(pokemon) {
+        const modalTitle = document.getElementById('pokemonModalLabel');
+        const modalImage = document.getElementById('modalImage');
+        const modalType = document.getElementById('modalType');
+        const modalAbilities = document.getElementById('modalAbilities');
+  
+        modalTitle.textContent = pokemon.name;
+        modalImage.src = pokemon.imageUrl;
+        modalType.textContent = `Tipo: ${pokemon.type}`;
+        modalAbilities.textContent = `Habilidades: ${pokemon.abilities.join(', ')}`;
+    }
   
   document.addEventListener('DOMContentLoaded', function () {
     function fetch_Pokemon(pokemonId) {
@@ -66,6 +77,17 @@ function fetch_Pokemon(pokemonId) {
             </div>
         `;
         return card;
+    }
+    function mostrar_modal(pokemon) {
+        const modalTitle = document.getElementById('pokemonModalLabel');
+        const modalImage = document.getElementById('modalImage');
+        const modalType = document.getElementById('modalType');
+        const modalAbilities = document.getElementById('modalAbilities');
+  
+        modalTitle.textContent = pokemon.name;
+        modalImage.src = pokemon.imageUrl;
+        modalType.textContent = `Tipo: ${pokemon.type}`;
+        modalAbilities.textContent = `Habilidades: ${pokemon.abilities.join(', ')}`;
     }
   
     const mostradita = document.getElementById('pokemonRow');

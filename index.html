@@ -5,36 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de Pokemons</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="detalle.html">
+  <link rel="stylesheet" href="historial.html">
 </head>
 <body>
+  <div class="container mt-5">
+    <h1>Lista de Pokemons</h1>
+    <div class="row" id="pokemonRow">
 
-<div class="container mt-5">
-  <div class="row" id="pokemonRow">
-
-  </div>
-</div>
-
-<div class="modal fade" id="pokemonModal"   aria-labelledby="pokemonModalLabel" >
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="pokemonModalLabel"></h5>
-        <button type="button" class="cerrar" data-dismiss="modal" aria-label="cerrar">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img id="modalImage" class="img-fluid" src="" alt="">
-        <p id="modalType"></p>
-        <p id="modalAbilities"></p>
-      </div>
-    </div>
-  </div>
-</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="js.js"></script>
+<script src="mostrar.js"></script>
 </body>
 </html>

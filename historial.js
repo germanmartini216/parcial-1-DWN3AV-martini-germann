@@ -21,7 +21,7 @@ function mostrarCardDetallada(pokemon, index) {
     card.classList.add('card', 'mt-3', 'mb-3');
     card.innerHTML = `
         <div class="card-img-container"> <!-- Contenedor de la imagen con clase -->
-            <img src="${pokemon.imageUrl}" class="card-img-top img-smaller" alt="${pokemon.name}"> <!-- Agrega la clase img-smaller -->
+            <img src="${pokemon.imageUrl}" class="card-img-top img-smaller" alt="${pokemon.name}">
         </div>
         <div class="card-body">
             <h5 class="card-title">${pokemon.name}</h5>
